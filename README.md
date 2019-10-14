@@ -35,9 +35,9 @@ The home page, under the path **/**, uses the ProductList component to call the 
 
 ### Create Product
 
-This page, under the path **/addproduct**, uses the AddProduct component to display an empty form. After the form is submitted, the form data is transformed to a JSON object and pass to the **POST api/Products** API to add a new product record in the database.
+This page, under the path **/addproduct**, uses the AddProduct component to display an empty form. After the form is submitted, the form data is transformed to a JSON object and passed to the **POST api/Products** API to add a new product record in the database.
 
 ### Edit Product
 
-This page, under the path **/editproduct/:productid**, uses the AddProduct component. It first retrieves the information of a product using the **GET api/Products/{id}** API and popolates the form with this default information. After the form is submitted, the json object is sent to the **PUT api/Products/{id}** API to update the product record in the database.
+This page, under the path **/editproduct/:productid**, uses the AddProduct component. It first retrieves the data of an existing product, based on the productid param in the route, using the **GET api/Products/{id}** API. It then popolates the form with this default data and after the form is submitted, the form data is transformed to a json object and sent to the **PUT api/Products/{id}** API to update the product record in the database.
 
