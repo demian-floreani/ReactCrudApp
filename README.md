@@ -23,7 +23,7 @@ The ProductsController provides the rest API methods used by the front end. The 
 
 The model for the product is in the Product.cs class under the Models folder. 
 
-You can setup the database locally by using Entity Framework Core to build the database based on the model by running the *Update-Database* command in the Package Manager Console. I have included some migrations to seed the initial data.
+You can setup the database locally (using for example the (localdb)\MSSQLLocalDB server) by using Entity Framework Core to build the database based on the model by running the *Update-Database* command in the Package Manager Console. I have included some migrations to seed the initial data.
 
 ## Frontend
 
