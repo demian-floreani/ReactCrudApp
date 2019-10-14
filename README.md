@@ -23,7 +23,7 @@ The ProductsController provides the rest API methods used by the front end. The 
 
 The model for the product is in the Product.cs class under the Models folder. 
 
-You can setup the database locally by using Entity framework Core to build the database based on the model by running the *Update-Database* command in the Package Manager Console. I have included some migrations to seed some initial data.
+You can setup the database locally by using Entity Framework Core to build the database based on the model by running the *Update-Database* command in the Package Manager Console. I have included some migrations to seed the initial data.
 
 ## Frontend
 
@@ -31,11 +31,11 @@ As this app uses React, there are two components used, **ProductList** to displa
 
 ### Product List
 
-The ProductList component calls the **GET api/Products API** to retrieve all the products and render them in a HTML table. 
+The ProductList component calls the **GET api/Products** API to retrieve all the products and render them in a HTML table. 
 
 ### Create Product
 
-This page uses the AddProduct component to create a product by passing a json object from the form to the **POST api/Products** API.
+This page uses the AddProduct component to display an empty form. After the form is submitted, the form data is transformed to a JSON object and pass to the **POST api/Products** API to add a new product record in the database.
 
 ### Edit Product
 
